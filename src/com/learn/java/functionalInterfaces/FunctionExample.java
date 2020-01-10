@@ -5,7 +5,7 @@ import java.util.function.Function;
 public class FunctionExample {
 
     private static Function<String, String> function = (name) -> name.toUpperCase();
-    private static Function<String, String> addSomeString = (input) -> input.concat(" default");
+    static Function<String, String> addSomeString = (input) -> input.concat(" default");
 
     public static void main(String[] args) {
         //Using Function interface
