@@ -10,8 +10,8 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class PredicateAndConsumerExample {
-    Predicate<Student> p1 = (student -> student.getGradeLevel() >= 3);
-    Predicate<Student> p2 = (student -> student.getGpa() >= 3.9);
+    static Predicate<Student> p1 = (student -> student.getGradeLevel() >= 3);
+    static Predicate<Student> p2 = (student -> student.getGpa() >= 3.9);
 
     BiPredicate<Integer, Double> biPredicate = (gradeLevel, gpa) -> gradeLevel >= 3 && gpa >= 3.9;
     BiConsumer<String, List<String>> biConsumer = (name, activities) -> System.out.println(name + ": " + activities);
