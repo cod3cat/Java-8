@@ -42,5 +42,7 @@ public class StreamReduceExample {
         Optional<String> stringOptional = getStudentNameWithHighestGpa();
         //print the name using method reference
         stringOptional.ifPresent(System.out::print);
+
+
     }
 }
